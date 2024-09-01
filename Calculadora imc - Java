@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Digite o seu peso em kg: ");
+        double peso = s.nextDouble ();
+        System.out.println();
+        System.out.print("Digite sua altura em metros: ");
+        double altura = s.nextDouble ();
+        int expoente = 2;
+        double resultado = (peso / Math.pow(altura, expoente));
+         if (resultado < 18.5){
+            System.out.print("Você está abaixo do peso. ");
+        }
+         else if (resultado >= 18.25 && resultado < 25){
+             System.out.print("O seu peso está normal. ");
+         }
+         else if (resultado > 25 && resultado < 30 ){
+             System.out.print("Você está com sobrepeso. ");
+         }
+         else {
+             System.out.print("Você está obeso, procure um médico. ");
+         }
+         }
