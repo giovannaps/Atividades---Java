@@ -1,0 +1,32 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Digite um número inteiro: ");
+        int num1 = s.nextInt();
+        System.out.println();
+        System.out.print("Digite outro número inteiro maior que o anterior: ");
+        int num2 = s.nextInt();
+
+        System.out.println("Esses são os números pares: ");
+        for (int i = num1 + 1; i < num2; i++) {
+
+            if (i % 2 == 0) {
+
+                System.out.println(i);
+
+
+            }
+        }
+            System.out.println();
+
+        System.out.println("Esses são os números ímpares: ");
+            for (int a = num1 + 1; a < num2; a++) {
+                if (a % 2 != 0) {
+
+                    System.out.println(a);
+
+
+                }
+            }
+        }
+    }
