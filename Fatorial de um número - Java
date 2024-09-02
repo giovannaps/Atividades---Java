@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Digite um número inteiro positivo: ");
+        int fatorialNumero = s.nextInt();
+        int fatorialResultado = 1;
+        int i = 1;
+
+        while (fatorialNumero >= i) {
+            fatorialResultado *= i;
+            i++;
+
+
+
+
+
+        }
+        System.out.print("O fatorial de " + fatorialNumero + " é igual a " + fatorialResultado);
+    }
+}
