@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Insira o seu salário bruto: ");
+        double renda = s.nextDouble ();
+        System.out.println();
+        double imposto = 0.0;
+        double rendaAnual = renda * 12;
+
+
+
+        if (renda <= 2112){
+            System.out.print("Você está isento. " );
+        }
+         else if (renda > 2112 && renda <= 3370){
+             imposto = ((renda - 2112) * 0.075);
+            System.out.print("Você pagará " + imposto + " mensalmente." );
+         }
+         else if (renda > 3370 && renda <= 4640 ){
+            imposto = (renda - 3370) * 0.15 + 94.35;
+            System.out.print("Você pagará " + imposto + " mensalmente." );
+         }
+        else if (renda > 4640 && renda <= 5910 ){
+            imposto =  (renda - 4640) * 0.225 + 284.85;
+            System.out.print("Você pagará " + imposto + " mensalmente." );
+        }
+         else {
+            imposto = (renda - 5910) * 0.275 + 573.10;
+            System.out.print("Você pagará " + imposto + " mensalmente." );
+         }
+         }
+
+
+
+
+        }
